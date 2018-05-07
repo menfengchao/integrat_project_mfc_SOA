@@ -7,5 +7,5 @@ import com.soa.mfc.pojo.User;
  * Created by yunxin on 2018/5/3.
  */
 public interface UserService {
-    public MfcResult addUser(User user);
+    public MfcResult loginUser(User user);
 }
