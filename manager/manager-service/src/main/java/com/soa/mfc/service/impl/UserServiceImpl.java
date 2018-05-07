@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public MfcResult addUser(User user) {
-        System.out.println("234567");
-        return null;
+       System.out.println(user.getNickname());
+        return new MfcResult("测试通过");
     }
 }
