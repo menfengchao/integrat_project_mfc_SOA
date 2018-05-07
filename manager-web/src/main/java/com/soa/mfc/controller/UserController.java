@@ -20,6 +20,11 @@ public class UserController {
     @Autowired
     public UserService userService;
 
+    @RequestMapping("/index")
+    public String index() {
+        return "index";
+    }
+
     @RequestMapping("/user/save")
     @ResponseBody
     public MfcResult addItem(User user, String desc) {
@@ -27,4 +32,5 @@ public class UserController {
         System.out.println("ert");
         return result;
     }
+
 }
