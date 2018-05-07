@@ -1,0 +1,1 @@
+此文件夹用来存放临时生成的mybaties xml java对象
