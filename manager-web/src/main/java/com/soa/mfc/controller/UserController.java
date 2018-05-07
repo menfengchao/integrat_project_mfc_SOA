@@ -29,7 +29,7 @@ public class UserController {
     @RequestMapping(value = "/user/save", method = RequestMethod.GET)
     @ResponseBody
     public MfcResult addItem(User user) {
-        MfcResult result = userService.addUser(user);
+        MfcResult result = userService.loginUser(user);
         return result;
     }
 
