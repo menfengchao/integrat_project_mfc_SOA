@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -25,11 +26,10 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping("/user/save")
+    @RequestMapping(value = "/user/save", method = RequestMethod.GET)
     @ResponseBody
-    public MfcResult addItem(User user, String desc) {
+    public MfcResult addItem(User user) {
         MfcResult result = userService.addUser(user);
-        System.out.println("ert");
         return result;
     }
 
