@@ -26,11 +26,19 @@ public class UserController {
         return "index";
     }
 
-    @RequestMapping(value = "/user/save", method = RequestMethod.GET)
-    @ResponseBody
-    public MfcResult addItem(User user) {
+    @RequestMapping(value = "/user/login", method = RequestMethod.GET)
+    public String index(User user) {
+        return "index";
+    }
+
+    @RequestMapping(value = "/user/login", method = RequestMethod.POST)
+    public String login(User user) {
         MfcResult result = userService.loginUser(user);
-        return result;
+        if (result.getMsg().equals("SUCCESS")){
+            return "manageMain";
+        }else{
+            return "index";
+        }
     }
 
 }
