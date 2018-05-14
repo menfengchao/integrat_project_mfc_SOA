@@ -21,5 +21,9 @@ linux：  nohup java -jar zkui-2.0-SNAPSHOT-jar-with-dependencies.jar &
 zkui-2.0-SNAPSHOT-jar-with-dependencies.jar
 config.cfg
 注意后面的那个&，是指不退出的意思。
+http://192.168.1.173:9090
+admin manager
+
+登录信息由redis保存 设置缓存时间为100
 
 
