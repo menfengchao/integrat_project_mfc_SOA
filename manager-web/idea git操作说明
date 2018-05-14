@@ -1,0 +1,19 @@
+一．安装git客户端
+    	Window下安装git客户端
+二．配置Intellij idea中的Git/ GitHub
+	打开Preference-- Version Control。
+	下拉选择Github，填写Host、Login和Password，然后Test是否成功。
+三．项目本地Git提交
+   1.创建本地仓库 （建议选择项目所在root目录）
+   2.提交代码到git 右键点击src或代码文件，Git -- Add -- Commit（先Add再Commit）
+四．项目远程提交
+ 	1.在Github上建立仓库
+	2.在本地配置远程仓库
+	cd本地仓库目录（在git bash中打开）
+	git remote add origin （https://github.com/menfengchao/integrat_project_mfc_SOA）
+	git push -u origin master
+	若遇到failed to push some refs to 解决方法
+	（git pull --rebase origin master）|| Git pull origin master
+	git push -u origin master
+选择Git，指定Git路径后，Test测试功能是否正常
+参考 https://blog.csdn.net/u010237107/article/details/50910879

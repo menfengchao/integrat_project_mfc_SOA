@@ -1,0 +1,17 @@
+工程名
+integrat_project_mfc_SOA
+组织名
+com.soa.mfc
+父类工程名
+common-parent
+	common-utils
+   	manager
+   		manager-pojo
+		manager-dao
+		manager-interface
+		manager-service
+   	manager-web
+
+
+前端框架 bootstrap
+
