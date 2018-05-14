@@ -21,6 +21,7 @@ public class UserController {
     @Autowired
     public UserService userService;
 
+
     @RequestMapping("/index")
     public String index() {
         return "index";
@@ -28,7 +29,12 @@ public class UserController {
 
     @RequestMapping(value = "/user/login", method = RequestMethod.GET)
     public String index(User user) {
-        return "index";
+        MfcResult result = userService.index(user);
+        if (result.getMsg().equals("SUCCESS")){
+            return "manageMain";
+        }else{
+            return "index";
+        }
     }
 
     @RequestMapping(value = "/user/login", method = RequestMethod.POST)

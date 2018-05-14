@@ -144,7 +144,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img alt="300x200" src="v3/default4.jpg" />
+                        <img alt="300x200" src="../assets/img/manageslideshow/default.jpg" />
                         <div class="caption">
                             <h3>
                                 Thumbnail label
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img alt="300x200" src="v3/default5.jpg" />
+                        <img alt="300x200" src="../assets/img/manageslideshow/default1.jpg" />
                         <div class="caption">
                             <h3>
                                 Thumbnail label
@@ -176,7 +176,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img alt="300x200" src="v3/default6.jpg" />
+                        <img alt="300x200" src="../assets/img/manageslideshow/default2.jpg" />
                         <div class="caption">
                             <h3>
                                 Thumbnail label

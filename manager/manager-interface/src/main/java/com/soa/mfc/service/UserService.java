@@ -8,4 +8,5 @@ import com.soa.mfc.pojo.User;
  */
 public interface UserService {
     public MfcResult loginUser(User user);
+    public MfcResult index(User user);
 }
