@@ -15,3 +15,11 @@ common-parent
 
 前端框架 bootstrap
 
+zk监控界面启动命令
+linux：  nohup java -jar zkui-2.0-SNAPSHOT-jar-with-dependencies.jar &
+所需文件
+zkui-2.0-SNAPSHOT-jar-with-dependencies.jar
+config.cfg
+注意后面的那个&，是指不退出的意思。
+
+
